@@ -1,0 +1,108 @@
+<!-- /**
+*
+* @author Jagjeet Singh
+*
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head starts-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- linking to the style.css page in the css folder -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<!-- head ends -->
+
+<!-- Body Starts -->
+
+<body>
+
+    <!-- Header -->
+
+    <div class="customerBox"></div>
+    <div id="customerHeading">
+
+        <h2 id="header">Customer list</h2>
+        <button id="customerButton">Add New Customer</button>
+        <input type="text" id="searchBlock" placeholder="Search By Name">
+
+        <!-- Body Content page with grid formation-->
+
+    </div>
+    <div class="gridBox">
+        <div class="gridList" id="customerBoxes">
+            <div class="customerCard" onclick="displayDetail(this)">
+                <div>
+                    <h3 class="customerName">Batman</h3>
+                    <h6 class="customerEmail">batman@gmail.com</h6>
+                </div>
+                <img class="customerImage" src="./images/batman.jpg">
+            </div>
+
+            <div class="customerCard" onclick="displayDetail(this)">
+                <div>
+                    <h3 class="customerName">Superman</h3>
+                    <h6 class="customerEmail">superman@gmail.com</h6>
+                </div>
+                <img class="customerImage" src="./images/superman.jpg">
+            </div>
+
+            <div class="customerCard" onclick="displayDetail(this)">
+                <div>
+                    <h3 class="customerName">Rajnikant</h3>
+                    <h6 class="customerEmail">rajnikanth@gmail.com</h6>
+                </div>
+                <img class="customerImage" src="./images/rajnikanth.jpg">
+            </div>
+        </div>
+
+        <!-- Second Grid -->
+
+        <div class="gridList" id="detailedCardList">
+            <div class="customerCard customerCardDetail" id="displayCard"></div>
+        </div>
+    </div>
+
+    <!-- Pop-up Box -->
+
+    <div id="customerView" class="view">
+        <div class="viewDetail">
+
+            <!-- Pop-up Box Header -->
+
+            <div class="viewHeader">
+                <h2>Add Customer</h2>
+            </div>
+
+            <!-- Pop-up Box main content -->
+
+            <div class="viewMain">
+                Name: <input type="text" id="nameBlock"><br><br>
+                Email:<input type="text" id="emailBlock">
+            </div>
+
+            <!-- Pop-up Box Footer -->
+
+            <div class="viewFooter">
+                <h3>
+                    <button id="addCustomer">Add</button>
+                    <button id="close">Close</button>
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Body Ends -->
+
+<!-- linking to the script.js page in js folder -->
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
